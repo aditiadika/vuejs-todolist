@@ -4,6 +4,7 @@
     <NavBar />
     <AllFriends :friends="friends" @delete="deleteFriend" />
     <OnlineFriends :friends="friends" />
+    <Blogs />
   </div>
 </template>
 
@@ -12,6 +13,8 @@ import HelloWorld from "./components/HelloWorld.vue";
 import NavBar from "./components/NavBar";
 import AllFriends from "./components/AllFriends";
 import OnlineFriends from "./components/OnlineFriends";
+import Blogs from "./Blogs";
+import RouterView from "./router/index";
 
 export default {
   name: "app",
@@ -19,7 +22,8 @@ export default {
     HelloWorld,
     NavBar,
     AllFriends,
-    OnlineFriends
+    OnlineFriends,
+    Blogs
   },
   data() {
     return {
